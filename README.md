@@ -1,71 +1,54 @@
-# ChickenDoor
+# Zendure & Shelly to ESP32-2432S024C
 
-![SCREENLOGO](https://github.com/Pidow/ChickenDoor/blob/master/1.first%20WITH%20DIGISPARK/1.Connection%20&%20photos/definition.png?raw=true)![SCREENLOGO](https://github.com/Pidow/ChickenDoor/blob/master/1.first%20WITH%20DIGISPARK/1.Connection%20&%20photos/ouvert.png?raw=true)
+![SCREENLOGO](https://github.com/Pidow/Zendure-ESP32-2432S024C/blob/main/img/IMG1.jpg?raw=true)
 
 TARGET:
-Move the chicken house doors 2 times per day.
-Estimate battery lifetime: 8 month with AAA battery(x8).
-
-### VERSION HISTORY
-*   _[1st Version](https://github.com/Pidow/ChickenDoor/tree/master/1.first%20WITH%20DIGISPARK): Digispark STD with LED to have some information. Not very userfriendly. To add a screen we should use digispark pro._
-*   _[2nd Version](https://github.com/Pidow/ChickenDoor/tree/master/2.Rebuild%20with%20DIGISPARK%20PRO): Digispark pro with screen (code not optimised)._
-*   _[3st Version](https://github.com/Pidow/ChickenDoor/tree/master/3.With%20light%20sensor%20with%20DIGISPARK%20PRO): Digispark pro with screen and light sensor. After test, Tune the light sensor is very difficult, black cloud may close the door._
-*   _[4th Version](https://github.com/Pidow/ChickenDoor/tree/master/4.Ephemeris%20version%20with%20DIGISPARK%20PRO): Actually the better version, base on south french Ephemeris. Code optimised, add watchdog sleep mode, add a push button to enter in debug mode and to wake up the screen._
+Display Shelly & Zendure gateway & EDF Tempo informations trough Wifi.
+Track the solar production and electric consumption with Shelly Pro 3EM information
+Follow the Zendure battery load trough the Zendure's MQTT message reception.
 
 
-## FOURTH VERSION DISGISPARK PRO VERSION & PUSH BUTTON: less 15€
-![SCREENLOGO](https://github.com/Pidow/ChickenDoor/blob/master/4.Ephemeris%20version%20with%20DIGISPARK%20PRO/1.Assy%20view/Description.jpg?raw=true)
-*   ATTiny167 Digispark Pro
-*   RTC DS3231 (Real Time clock)
-*   Switch button
-*   Battery holder 4 battery 1,5 v (x2)
-*   Oled screen 128x64 I2C SPI serial.
+## VERSION HISTORY
+*   NONE
 
+## FIRST VERSION:
 
-## Description
-
-Startup view.
-
-![FIRSTVERSION](https://github.com/Pidow/ChickenDoor/blob/master/4.Ephemeris%20version%20with%20DIGISPARK%20PRO/1.Assy%20view/PRESENTATION.jpg?raw=true)
-
-Press button after boot to enter in debug mode.
-![FIRSTVERSION](https://github.com/Pidow/ChickenDoor/blob/master/4.Ephemeris%20version%20with%20DIGISPARK%20PRO/1.Assy%20view/DBG%20MODE.jpg?raw=true)
-
-Press 8secondes to wake up the screen when need. (screen shutdown after boot to reduce power consuming).
-![FIRSTVERSION](https://github.com/Pidow/ChickenDoor/blob/master/4.Ephemeris%20version%20with%20DIGISPARK%20PRO/1.Assy%20view/BUTTON%20ACTION.jpg?raw=true)
-
-
-## CONNECTION
-![FIRSTVERSION](https://github.com/Pidow/ChickenDoor/blob/master/4.Ephemeris%20version%20with%20DIGISPARK%20PRO/1.Assy%20view/digispark%20pro.png?raw=true)
-
-Connection for the digispark pro
-![FIRSTVERSION](https://github.com/Pidow/ChickenDoor/blob/master/4.Ephemeris%20version%20with%20DIGISPARK%20PRO/1.Assy%20view/digispark%20pro%20connections&.jpg?raw=true)
-
-Connection for the Servomotor MG995
-![FIRSTVERSION](https://github.com/Pidow/ChickenDoor/blob/master/4.Ephemeris%20version%20with%20DIGISPARK%20PRO/1.Assy%20view/MG995.png?raw=true)
-
-
-## 3D PRINT
-Motor support:
-![FIRSTVERSION](https://github.com/Pidow/ChickenDoor/blob/master/4.Ephemeris%20version%20with%20DIGISPARK%20PRO/1.Assy%20view/Servo%20motor%203D%20print%20support.jpg?raw=true)
-
-1/2 wheel
-![FIRSTVERSION](https://github.com/Pidow/ChickenDoor/blob/master/4.Ephemeris%20version%20with%20DIGISPARK%20PRO/1.Assy%20view/Wheel%203D%20print.jpg?raw=true)
-
-
-
+Overview:
+*   ESP32 : 20€ https://fr.aliexpress.com/item/1005006182025099.html
+*   Shelly pro 3EM: 120€ https://fr.zendure.com/products/shelly?variant=41867203084424
+*   Battery pack with Hyper2000 https://fr.zendure.com/
 
 ## How it's work:
-Push software to Digispark [following instruction](https://github.com/Pidow/ChickenDoor/blob/master/4.Ephemeris%20version%20with%20DIGISPARK%20PRO/3.Arduino%20code/Digispark%20arduino%20configuration.pdf), connect all component following instructions.
+First, install ESP32 parameter in arduino IDE.
+Fill wifi SSID, Password; Zendure mail & Serial number.
+You must generate your MQTT password by active line 75 (zendure();)
+Upload software to ESP32, save information shown on screen.
+Fill this information in MQTT parameter, disable line 75, and upload software to ESP32
+
 The system is ready !
 
-Note:
-If the RTC have power lost, software update it time automaticaly.
-Oled screen & RTC use the same SDA and SCL connection to DIGISPARK.
-RTC DS3231 allow to have Temp information.
-I have put an relay to avoid battery consuming to maintain the servomotor position.
-FYI Servomotor have only 180° angle, i have create a 3D print wheel to open the door.
+## CONNEXION
+![SCREENLOGO](https://github.com/Pidow/Zendure_Esp32_TTGO_Shelly/blob/master/img/wifi1.jpg?raw=true)
+![SCREENLOGO](https://github.com/Pidow/Zendure_Esp32_TTGO_Shelly/blob/master/img/wifi2.jpg?raw=true)
 
+### PRODUCTION INFORMATION
+![SCREENLOGO](https://github.com/Pidow/Zendure_Esp32_TTGO_Shelly/blob/master/img/Production.jpg?raw=true)
+![SCREENLOGO](https://github.com/Pidow/Zendure_Esp32_TTGO_Shelly/blob/master/img/shelly2.jpg?raw=true)
+### CONSUMPTION INFORMATION
+![SCREENLOGO](https://github.com/Pidow/Zendure_Esp32_TTGO_Shelly/blob/master/img/Consommation.jpg?raw=true)
+![SCREENLOGO](https://github.com/Pidow/Zendure_Esp32_TTGO_Shelly/blob/master/img/shelly.jpg?raw=true)
+
+### BATTERY INFORMATION
+![SCREENLOGO](https://github.com/Pidow/Zendure_Esp32_TTGO_Shelly/blob/master/img/Zendure.jpg?raw=true)
+## 3D PRINT
+CASE PROTECTION (in progress)
+
+
+
+## Note:
+No RTC needed, the system is connected to Network Time Protocol.
+The screen enter in standby mode after few minutes, but a simple touch wake it.
+A RVB led blink information during screen off, red for consumption, blue for batterie use, green for solar production.
 
 > I'm available if any question.
 > 
