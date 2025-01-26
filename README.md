@@ -32,25 +32,23 @@ The system is ready !
 
 During solar production, the system display:
 
-	-Inject power to grid
-	
-	-Battery power load
+	-Inject power to grid  
+	-Battery power load  
 
 ### CONSUMPTION INFORMATION
 ![SCREENLOGO](https://github.com/Pidow/Zendure-ESP32-2432S024C/blob/main/img/SCREENON_Conso.jpg?raw=true)
 
 During grid consumption, the system display:
 
-	-Battery load (stand by)
-	
-	-Grid power consumption
+	-Battery load (stand by)  
+	-Grid power consumption  
 
 ### BATTERY INFORMATION
 ![SCREENLOGO](https://github.com/Pidow/Zendure-ESP32-2432S024C/blob/main/img/SCREENON_Batterie.jpg?raw=true)
 
 During battery use, the system display:
 
-	-Remain battery time.
+	-Remain battery time.  
 	
 ### RVB LED WHEN SCREEN IS OFF
 To avoid any burning mark on the screen & useless consumption, the screen shutdown after few minutes.  
