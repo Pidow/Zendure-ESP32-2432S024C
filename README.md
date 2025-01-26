@@ -70,8 +70,7 @@ CASE PROTECTION (in progress)
 
 ## Note:
 No RTC needed, the system is connected to Network Time Protocol.  
-The screen enter in standby mode after few minutes, but a simple touch wake it.  
-A RVB led blink information during screen off, red for consumption, blue for batterie use, green for solar production.  
+Special thanks to Jean-Baptiste Romain, for the wonderfull TEMPO API (https://github.com/jbromain), buy him a coffee ! (https://buymeacoffee.com/jbromain25)
 
 > I'm available if any question.
 > 
