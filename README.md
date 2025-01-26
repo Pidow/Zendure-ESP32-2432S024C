@@ -3,9 +3,9 @@
 ![SCREENLOGO](https://github.com/Pidow/Zendure-ESP32-2432S024C/blob/main/img/IMG1.jpg?raw=true)
 
 TARGET:
-Display Shelly & Zendure gateway & EDF Tempo informations trough Wifi.
-Track the solar production and electric consumption with Shelly Pro 3EM information
-Follow the Zendure battery load trough the Zendure's MQTT message reception.
+Display Shelly & Zendure gateway & EDF Tempo informations trough Wifi.  
+Track the solar production and electric consumption with Shelly Pro 3EM information.  
+Follow the Zendure battery load trough the Zendure's MQTT message reception.  
 
 
 ## VERSION HISTORY
@@ -19,11 +19,11 @@ Overview:
 *   Battery pack with Hyper2000 https://fr.zendure.com/
 
 ## How it's work:
-First, install ESP32 parameter in arduino IDE.
-Fill wifi SSID, Password; Zendure mail & Serial number.
-You must generate your MQTT password by active line 75 (zendure();)
-Upload software to ESP32, save information shown on screen.
-Fill this information in MQTT parameter, disable line 75, and upload software to ESP32
+First, install ESP32 parameter in arduino IDE.  
+Fill wifi SSID, Password; Zendure mail & Serial number.  
+You must generate your MQTT password by active line 75 (zendure();)  
+Upload software to ESP32, save information shown on screen.  
+Fill this information in MQTT parameter, disable line 75, and upload software to ESP32  
 
 The system is ready !
 
@@ -53,11 +53,9 @@ During battery use, the system display:
 	-Remain battery time.
 	
 ### RVB LED WHEN SCREEN IS OFF
-To avoid any burning mark on the screen & useless consumption, the screen shutdown after few minutes.
-
-You just have to  touch the screen to wake it.
-
-But during this snooze, RVB led blink to inform if solar production, battery use, or Grid use.
+To avoid any burning mark on the screen & useless consumption, the screen shutdown after few minutes.  
+You just have to  touch the screen to wake it.  
+But during this snooze, RVB led blink to inform if solar production, battery use, or Grid use.  
 
 	-GREEN: SOLAR PRODUCTION  
 	-BLUE: BATTERY USE  
@@ -73,9 +71,9 @@ CASE PROTECTION (in progress)
 
 
 ## Note:
-No RTC needed, the system is connected to Network Time Protocol.
-The screen enter in standby mode after few minutes, but a simple touch wake it.
-A RVB led blink information during screen off, red for consumption, blue for batterie use, green for solar production.
+No RTC needed, the system is connected to Network Time Protocol.  
+The screen enter in standby mode after few minutes, but a simple touch wake it.  
+A RVB led blink information during screen off, red for consumption, blue for batterie use, green for solar production.  
 
 > I'm available if any question.
 > 
