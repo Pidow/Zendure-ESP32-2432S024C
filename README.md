@@ -27,36 +27,38 @@ Fill this information in MQTT parameter, disable line 75, and upload software to
 
 The system is ready !
 
-## CONNEXION
-![SCREENLOGO](https://github.com/Pidow/Zendure_Esp32_TTGO_Shelly/blob/master/img/wifi1.jpg?raw=true)
-![SCREENLOGO](https://github.com/Pidow/Zendure_Esp32_TTGO_Shelly/blob/master/img/wifi2.jpg?raw=true)
-
 ### PRODUCTION INFORMATION
 ![SCREENLOGO](https://github.com/Pidow/Zendure-ESP32-2432S024C/blob/main/img/SCREENON_Prod.jpg?raw=true)
+
 During solar production, the system display:
 	-Inject power to grid
 	-Battery power load
 
 ### CONSUMPTION INFORMATION
-![SCREENLOGO](https://github.com/Pidow/Zendure-ESP32-2432S024C/blob/main/img/SCREENON_Conso.jpgraw=true)
+![SCREENLOGO](https://github.com/Pidow/Zendure-ESP32-2432S024C/blob/main/img/SCREENON_Conso.jpg?raw=true)
+
 During grid consumption, the system display:
 	-Battery load (stand by)
 	-Grid power consumption
 
 ### BATTERY INFORMATION
 ![SCREENLOGO](https://github.com/Pidow/Zendure-ESP32-2432S024C/blob/main/img/SCREENON_Batterie.jpg?raw=true)
+
 During battery use, the system display:
 	-Remain battery time.
 	
 ### RVB LED WHEN SCREEN IS OFF
 To avoid any burning mark on the screen & useless consumption, the screen shutdown after few minutes.
+
 You just have to  touch the screen to wake it.
+
 But during this snooze, RVB led blink to inform if solar production, battery use, or Grid use.
+
 GREEN: SOLAR PRODUCTION
 BLUE: BATTERY USE
 RED: GRID USE
-![SCREENLOGO](https://github.com/Pidow/Zendure-ESP32-2432S024C/blob/main/img/SCREENOFF_Prod.jpg.jpg?raw=true)
-![SCREENLOGO](https://github.com/Pidow/Zendure-ESP32-2432S024C/blob/main/img/SCREENOFF_Battery.jpg.jpg?raw=true)
+![SCREENLOGO](https://github.com/Pidow/Zendure-ESP32-2432S024C/blob/main/img/SCREENOFF_Prod.jpg?raw=true)
+![SCREENLOGO](https://github.com/Pidow/Zendure-ESP32-2432S024C/blob/main/img/SCREENOFF_Battery.jpg?raw=true)
 ![SCREENLOGO](https://github.com/Pidow/Zendure-ESP32-2432S024C/blob/main/img/SCREENOFF_Conso.jpg?raw=true)
 
 ## 3D PRINT
