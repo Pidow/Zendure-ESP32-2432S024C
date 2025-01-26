@@ -7,6 +7,8 @@ Display Shelly & Zendure gateway & EDF Tempo informations trough Wifi.
 Track the solar production and electric consumption with Shelly Pro 3EM information.  
 Follow the Zendure battery load trough the Zendure's MQTT message reception.  
 
+![SCREENLOGO](https://github.com/Pidow/Zendure-ESP32-2432S024C/blob/main/img/IMG3.png?raw=true)
+
 
 ## VERSION HISTORY
 *   NONE
@@ -30,24 +32,21 @@ The system is ready !
 ### PRODUCTION INFORMATION
 ![SCREENLOGO](https://github.com/Pidow/Zendure-ESP32-2432S024C/blob/main/img/SCREENON_Prod.jpg?raw=true)
 
-During solar production, the system display:
-
+During solar production, the system display:  
 	-Inject power to grid  
 	-Battery power load  
 
 ### CONSUMPTION INFORMATION
 ![SCREENLOGO](https://github.com/Pidow/Zendure-ESP32-2432S024C/blob/main/img/SCREENON_Conso.jpg?raw=true)
 
-During grid consumption, the system display:
-
+During grid consumption, the system display:  
 	-Battery load (stand by)  
 	-Grid power consumption  
 
 ### BATTERY INFORMATION
 ![SCREENLOGO](https://github.com/Pidow/Zendure-ESP32-2432S024C/blob/main/img/SCREENON_Batterie.jpg?raw=true)
 
-During battery use, the system display:
-
+During battery use, the system display:  
 	-Remain battery time.  
 	
 ### RVB LED WHEN SCREEN IS OFF
