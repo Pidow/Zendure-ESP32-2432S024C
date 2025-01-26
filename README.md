@@ -59,11 +59,9 @@ You just have to  touch the screen to wake it.
 
 But during this snooze, RVB led blink to inform if solar production, battery use, or Grid use.
 
-GREEN: SOLAR PRODUCTION
-
-BLUE: BATTERY USE
-
-RED: GRID USE
+	-GREEN: SOLAR PRODUCTION  
+	-BLUE: BATTERY USE  
+	-RED: GRID USE  
 
 ![SCREENLOGO](https://github.com/Pidow/Zendure-ESP32-2432S024C/blob/main/img/SCREENOFF_Prod.jpg?raw=true)
 ![SCREENLOGO](https://github.com/Pidow/Zendure-ESP32-2432S024C/blob/main/img/SCREENOFF_Battery.jpg?raw=true)
